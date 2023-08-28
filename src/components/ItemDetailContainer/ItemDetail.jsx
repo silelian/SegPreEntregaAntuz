@@ -28,9 +28,9 @@ export default function itemDetail({ detail }) {
                 {/* recorro mi estado q es un array()items, devuelve una 
                 card por cada elemento  */}
                 <Col key={detail.id} lg={4} className="mb-4">
-                    <Card>
+                    <Card className={style["cardLocalDetalle"]}>
                         <Card.Body>
-                            <Card.Title>{detail.name}</Card.Title>
+                            <Card.Title className={style["title"]}>{detail.name}</Card.Title>
                             <Card.Img variant="top" src={detail.image} className={style["imagen"]} />
                             <Card.Text>{detail.description}</Card.Text>                           
                             

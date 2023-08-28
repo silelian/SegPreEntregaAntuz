@@ -3,7 +3,7 @@
         "id":1,
         "name": "Cartera Negra",
         "price": 10.000,              
-        "image":"https://www.mapleweb.com.ar/MLA-1364493139-cartera-grande-bolso-dama-mujer-good-company-_JM",    
+        "image":"/img/CarteraNegra.jpg",    
         "category": "Carteras",
         "description" :"Cartera Casual."
     },
@@ -11,7 +11,7 @@
         "id":2,
         "name": "Portafolios Negro",
         "price": 10.000,
-        "image":"../../src/assets/img/portafolioNegro.jpg",
+        "image":"/img/portafolioNegro.jpg",
         "category": "Portafolios",
         "description" :"Portafolios Negro."
     },
@@ -19,7 +19,7 @@
         "id":3,
         "name": "Mochila Negra",
         "price": 10.000,
-        "image":"../src/assets/img/MochilaNegra.jpg",
+        "image":"/img/MochilaNegra.jpg",
         "category": "Mochilas",
         "description" :"Mochila Negra."
     },
@@ -27,7 +27,7 @@
         "id":4,
         "name": "Mochilas Roja",
         "price": 20.000,
-        "image":"../src/assets/img/mochilaRoja.jpg",
+        "image":"/img/mochilaRoja.jpg",
         "category": "Mochilas",
         "description" :"Mochilas Roja."
     },
@@ -35,7 +35,7 @@
         "id":5,
         "name": "Cartera Blanca",
         "price": 30.000,
-        "image":"../src/assets/img/CarteraBlanza.jpg",
+        "image":"/img/CarteraBlanca.jpg",
         "category": "Carteras",
         "description" :"Cartera Blanca."
     },
@@ -43,7 +43,7 @@
         "id":6,
         "name": "Portafolios Azul",
         "price": 10.000,
-        "image":"../src/assets/img/portafolioAzul.jpg",
+        "image":"/img/portafolioAzul.jpg",
         "category": "Portafolios",
         "description" :"Portafolios Azul."
     },
@@ -51,7 +51,7 @@
         "id":7,
         "name": "Cartera Beige",
         "price": 10.000,
-        "image" :"../src/assets/img/CarteraBeige.jpg",
+        "image" :"/img/CarteraBeige.jpg",
         "category": "Carteras",
         "description" :"Cartera Beige."
     },
@@ -59,7 +59,7 @@
         "id":8,
         "name": "Mochilas Gris",
         "price": 50.000,
-        "image":"../src/assets/img/Mochilagris.jpg",
+        "image":"/img/Mochilagris.jpg",
         "category": "Mochilas",
         "description" :"Mochilas Gris."
     },
@@ -67,7 +67,7 @@
         "id":9,
         "name": "Billeteras",
         "price": 10.000,
-        "image":"../src/assets/img/Billetera.jpg",
+        "image":"/img/Billetera.jpg",
         "category": "Billeteras",
         "description" :"Billeteras."
     },
@@ -75,7 +75,7 @@
         "id":10,
         "name": "Cartera Roja",
         "price": 10.000,
-        "image":"../src/assets/img/CarteraRoja.jpg",
+        "image":"/img/CarteraRoja.jpg",
         "category": "Carteras",
         "description" :"Cartera Roja."
     }

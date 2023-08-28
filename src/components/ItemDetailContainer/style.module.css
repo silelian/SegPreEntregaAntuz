@@ -30,7 +30,7 @@
     flex-wrap: wrap;
     margin-top: 132px;
     width: 1265px;
-    margin-left: 600px;
+    margin-left: 800px;
 }
 .boton {
     display: inline-block;
@@ -58,19 +58,15 @@
 
 .botonAgregar {
     display: inline-block;
-    line-height: 1.5;
-    /* color: #212529; */
+    line-height: 1.5;    
     text-align: center;
     text-decoration: none;
-    vertical-align: middle;
-    /* cursor: pointer;   
-    user-select: none;    */
+    vertical-align: middle;    
     padding: .375rem .75rem;
     font-size: 1rem;
     border-radius: .25rem;
     color: #171717;
-    background-color: #cbd8ea;
-    /* border-color: #0d6efd; */
+    background-color: #cbd8ea;  
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     margin-top: -2px;
 }
@@ -84,4 +80,22 @@
 .stock{
     margin-top: 5px;
 
+}
+
+.cardLocalDetalle{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    column-gap: -4px;
+    width: 300px;
+}
+.title{
+    text-align:center;
+    color: black;
 }

@@ -47,11 +47,9 @@ export default function ItemListConatainer() {
                 card por cada elemento  */}
                 {items.map((item) => (
                     <Col key={item.id} lg={4} className="mb-4">
-                        <Card>
-                            {/* <Card.Img variant="top" /> */}
-                            {/* src={img} */}
+                        <Card className={style["cardLocal"]}>                           
                             <Card.Body>
-                                <Card.Title>{item.name}</Card.Title>                                
+                                <Card.Title className={style["title"]}>{item.name}</Card.Title>                                
                                 <Card.Img  src={process.env.PUBLIC_URL + item.image} className={style["imagen"]}/>
                                 <Card.Text>{item.description}</Card.Text>  
                                 {/* en el link le paso el id del producto en particular */}
@@ -65,4 +63,3 @@ export default function ItemListConatainer() {
         </Container>
     );
 }
-// export default ItemListConatainer

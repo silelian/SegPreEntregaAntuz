@@ -22,8 +22,8 @@
     flex-wrap: wrap;
     margin-top: 132px;
     /* gap: 18px; */
-    width: 1265px;
-    margin-left: 36px;
+    width: 800px;
+    margin-left: 481px;
 }
 
 .imagen {
@@ -48,4 +48,21 @@
     border-color: #0d6efd;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     margin-top: 10px;
+}
+.cardLocal{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    column-gap: -4px;
+    width: 260px;
+}
+.title{
+    text-align:center;
+    color: black;
 }
