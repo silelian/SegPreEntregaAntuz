@@ -1,3 +1,24 @@
+@media (min-width: 1200px) { 
+    .container-Detalle {   
+        width: 100%;
+      margin-right: auto;
+        margin-left: -119px;
+    }
+ }
+ @media (min-width: 1400px) { 
+    .container-Detalle {   
+        width: 100%;
+      margin-right: auto;
+        margin-left: 119px;
+    }
+ }
+
+
+/* .container-Detalle {   
+    width: 100%;
+  margin-right: auto;
+    margin-left: 119px;
+} */
 .btnguardar {
     margin-left: 1rem;
     margin-top: -0.6rem;
@@ -30,7 +51,7 @@
     flex-wrap: wrap;
     margin-top: 132px;
     width: 1265px;
-    margin-left: 800px;
+    margin-left: 400px;
 }
 .boton {
     display: inline-block;
@@ -49,11 +70,13 @@
     border-color: #0d6efd;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     margin-top: 10px;
+    margin-left: 55px;
 }
 
 .imagen {
     width: 92%;
     height: 209px;
+    padding-left: 38px;
 }
 
 .botonAgregar {
@@ -90,12 +113,30 @@
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: .25rem;
+    border: 2px solid rgba(0,0,0,.125);
+    border-radius: 1rem;
     column-gap: -4px;
     width: 300px;
+    margin-left: 198px;
+    box-shadow: 3px 2px 5px #0404045c;
 }
 .title{
     text-align:center;
     color: black;
+    font-family: inherit;
+    font-size: 2.1rem;
+    
+}
+
+.descripcion{
+    color: black;
+    font-family: cursive;
+    font-size: 1.5rem;
+    margin-top: 11px;
+}
+.precio{
+    color: black;
+    font-family: cursive;
+    font-size: 1rem;
+    margin-top: 11px;
 }

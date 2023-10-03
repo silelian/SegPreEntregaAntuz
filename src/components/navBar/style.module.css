@@ -10,11 +10,12 @@
 }
 
 .nav-item {
-    font-size: 1.3rem;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
+    font-size: 1.6rem;
+    font-family: math;
     display: flex;
     margin-left: 41px;
+    margin-top: 6px;
+    color:black;
 }
 
 .navIcono {
@@ -22,25 +23,23 @@
     height: 78px;
     border: 1px solid #d0d0d0;
     border-radius: 40px;
-
 }
 
 .navh1 {
     color: black;
-    font-size: 1.7rem;
-    margin-top: -7px;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
+    font-size: 1.8rem;
+    font-family: math;
     display: flex;
     margin-left: -59px;
+    margin-top: 2px;
 }
 
 .navPrincipal {
     display: flex;
     gap: 12px;
 }
-
-.navBuscar {
-    color: rgb(0, 0, 0);
-    border-color: #151616;
+.carrito {
+    /* margin-left: 950px; */
+    margin-left: 450px;
+    margin-top: 10px;
 }

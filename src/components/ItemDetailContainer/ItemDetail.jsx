@@ -1,58 +1,52 @@
 import { Col, Card, Container } from "react-bootstrap";
-//import "bootstrap/dist/css/bootstrap.min.css";
-// import { Link } from "react-router-dom";
 import style from './style.module.css'
-import useCounter from '../../customHooks/useCounter';
-import { useState } from 'react';
+import ItemCount from "../itemCount/itemCount";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { useCartContext } from "../../context/CarContext";
+import { useState } from "react";
 
-export default function itemDetail({ detail }) {
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    const [stock, setStock] = useState(20)
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    const cantidadAgregada = useCounter(1, stock)
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    const [carrito, setCarrito] = useState([])
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    const stockContador = useCounter(10, stock)
+export default function ItemDetail({ item }) {
 
-      const agregar = (cantidad) => {
-           setCarrito([...carrito, {cantidad: cantidad}])
-          cantidadAgregada.resetear()
-          stockContador.decrementarPorValor(cantidad)
-          }
+    const {addToCart} = useCartContext();
 
+    const [cantidad, setCantidad] = useState(1);
 
+    const Restar = () => {
+        cantidad > 1 && setCantidad(cantidad - 1)
+    }
+
+    const Sumar = () => {
+        cantidad < item.stock && setCantidad(cantidad + 1)
+    } 
     return (
-        <Container fluid className="mt-4">
-            <div className={style["filaDetalle"]}>
-                {/* recorro mi estado q es un array()items, devuelve una 
+        <div>
+            <div className={style["container-Detalle"]}>
+                <div className={style["filaDetalle"]}>
+                    {/* recorro mi estado q es un array()items, devuelve una 
                 card por cada elemento  */}
-                <Col key={detail.id} lg={4} className="mb-4">
-                    <Card className={style["cardLocalDetalle"]}>
-                        <Card.Body>
-                            <Card.Title className={style["title"]}>{detail.name}</Card.Title>
-                            <Card.Img variant="top" src={detail.image} className={style["imagen"]} />
-                            <Card.Text>{detail.description}</Card.Text>                           
-                            
-                            {/* stock */}
-                            <div>
-                            <p className={style["stock"]}>
-                                Stock: {stockContador.contador} 
-                            </p>
-                            </div>
-                            <div className={style["Agregar"]}>
-                                <p>
-                                    Cantidad: {cantidadAgregada.contador}
-                                </p>
-                                <button className={style["botonAgregar"]} onClick={cantidadAgregada.decrementar}>-</button>
-                                <button className={style["botonAgregar"]} onClick={cantidadAgregada.aumentar}>+</button>
+                    <Col lg={4} className="mb-4">
+                        <Card key={item.id} className={style["cardLocalDetalle"]}>
+                            <Card.Body>
+                                <Card.Title className={style["title"]}>{item.titulo}</Card.Title>
+                                <Card.Img variant="top" src={item.imagen} className={style["imagen"]} />
+                                <Card.Text className={style["descripcion"]}>{item.descripcion}</Card.Text>
+                                <Card.Text className={style["precio"]}>Precio $:  {item.precio}</Card.Text>
                                 
-                            </div>
-                            <button onClick={() => agregar(cantidadAgregada.contador)} className={style["boton"]}>Agergar Carrito</button>
-                        </Card.Body>
-                    </Card>
-                </Col>
+                                <div>
+                                    <ItemCount 
+                                     cantidad={cantidad}
+                                     Sumar={Sumar}
+                                     Restar={Restar}
+                                     handleAgregar={() => { addToCart(item, cantidad) }}                                    
+                                    
+                                     />
+                                </div>
+
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </div>
             </div>
-        </Container>
+        </div>
     )
 }
